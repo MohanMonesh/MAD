@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>College Event Registration</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Internal CSS -->
+    <style>
+        body {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+            color: white;
+        }
+
+        .form-container {
+            width: 500px;
+            margin: 30px auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Inline CSS -->
+    <div class="event-header">
+    <div class="college-logo">🎓</div>
+
+    <h1 style="text-transform: uppercase; letter-spacing: 2px;">
+        College Fest 2026
+    </h1>
+
+    <p>✨ Celebrate • Compete • Create ✨</p>
+</div>
+
+
+    <div class="form-container">
+
+        <p style="text-align: center; color: #666;">
+            Register now for our exciting college events!
+        </p>
+
+        <form id="registrationForm">
+            <h2>👤 Personal Information</h2>
+
+
+            <!-- 1. Full Name -->
+            <label for="name">Full Name *</label>
+            <input type="text" id="name" placeholder="Enter your full name">
+
+            <!-- 2. Email -->
+            <label for="email">Email *</label>
+            <input type="email" id="email" placeholder="Enter your email">
+
+            <!-- 3. Phone -->
+            <label for="phone">Phone Number *</label>
+            <input type="tel" id="phone" placeholder="Enter 10-digit phone number">
+
+            <!-- 4. Date of Birth -->
+            <label for="dob">Date of Birth *</label>
+            <input type="date" id="dob">
+
+            <!-- 5. Gender -->
+            <label>Gender *</label>
+
+            <div class="radio-group">
+                <input type="radio" name="gender" value="Male"> Male
+                <input type="radio" name="gender" value="Female"> Female
+                <input type="radio" name="gender" value="Other"> Other
+            </div>
+
+            <h2>🎯 Event Information</h2>
+
+            <!-- 6. Course -->
+
+            <label for="course">Course *</label>
+            <select id="course">
+                <option value="">-- Select Course --</option>
+                <option>BCA</option>
+                <option>B.Sc Computer Science</option>
+                <option>B.Tech</option>
+                <option>BBA</option>
+                <option>MCA</option>
+            </select>
+
+            <!-- 7. Event -->
+            <label for="event">Choose Event *</label>
+            <select id="event">
+                <option value="">-- Select Event --</option>
+                <option>Coding Competition</option>
+                <option>Technical Quiz</option>
+                <option>Photography</option>
+                <option>Dance Competition</option>
+                <option>Music Competition</option>
+            </select>
+
+            <!-- 8. Number of Participants -->
+            <label for="participants">Number of Participants *</label>
+            <input type="number" id="participants" min="1" max="5"
+                   placeholder="1 to 5">
+
+            <!-- 9. Address -->
+            <label for="address">Address *</label>
+            <textarea id="address" rows="4"
+                      placeholder="Enter your address"></textarea>
+
+            <!-- 10. File Upload -->
+            <label for="studentId">Upload Student ID *</label>
+            <input type="file" id="studentId">
+
+            <!-- 11. Comments -->
+            <label for="comments">Comments</label>
+            <textarea id="comments" rows="3"
+                      placeholder="Any additional comments?"></textarea>
+
+            <!-- 12. Agreement -->
+            <div class="checkbox-group">
+                <input type="checkbox" id="agreement">
+                I agree to the event rules and regulations.
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit">REGISTER NOW</button>
+
+        </form>
+
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
