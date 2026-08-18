@@ -1,0 +1,126 @@
+/* General form styling */
+
+label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Text fields, email, phone, date, number, select and textarea */
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="number"],
+input[type="file"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+/* When user clicks inside a field */
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #667eea;
+    outline: none;
+}
+
+/* Radio buttons */
+
+.radio-group {
+    margin-top: 8px;
+    padding: 10px;
+    background-color: #f5f5ff;
+    border-radius: 8px;
+}
+
+.radio-group input {
+    margin-right: 5px;
+    margin-left: 10px;
+}
+
+/* Checkbox */
+
+.checkbox-group {
+    margin-top: 20px;
+    padding: 12px;
+    background-color: #f5f5ff;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.checkbox-group input {
+    margin-right: 8px;
+}
+
+/* Register button */
+
+button {
+    width: 100%;
+    margin-top: 25px;
+    padding: 14px;
+    background: linear-gradient(90deg, #667eea, #764ba2);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Button hover effect */
+
+button:hover {
+    transform: scale(1.02);
+    opacity: 0.9;
+}
+
+/* Small screen/mobile support */
+
+@media (max-width: 600px) {
+    .form-container {
+        width: 90%;
+        padding: 20px;
+    }
+}
+
+/* Creative event header */
+
+.event-header {
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.event-header h1 {
+    margin-bottom: 5px;
+}
+
+.event-header p {
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+.college-logo {
+    font-size: 50px;
+    margin-bottom: 5px;
+}
+
+/* Section headings */
+
+h2 {
+    color: #4f46e5;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 8px;
+    margin-top: 25px;
+}
